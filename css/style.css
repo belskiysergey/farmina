@@ -1,0 +1,683 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../font/Roboto-Bold.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('../font/Roboto-Light.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+* {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+ul {
+  list-style-type: none;
+}
+h1 {
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 53px;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 38px;
+  }
+}
+@media (max-height: 400px) and (orientation: landscape) {
+  h1 {
+    font-size: 38px;
+  }
+}
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+  color: #4CAC47;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+section,
+footer {
+  -webkit-box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.15);
+}
+footer {
+  padding-top: 70px;
+}
+/* header */
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 78px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: url('../img/background.jpg') no-repeat;
+}
+.logo__zoocomplex {
+  width: 160px;
+}
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navigation li {
+  margin: 0 10px;
+}
+.navigation a {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.navigation a:hover {
+  color: #ffffff73;
+}
+.wrapper-basket {
+  position: relative;
+  width: 60px;
+}
+.basket {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: url("../img/basket.png") no-repeat;
+}
+.counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 0px;
+  right: 2px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #00BA37;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+/* first section */
+.presentation {
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: calc(100vh - 78px);
+  color: #ffffff;
+  background: url(../img/background_first_section.jpg);
+  background-size: cover;
+  background-position: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.presentation__wrapper {
+  min-height: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.presentation__packs {
+  padding-bottom: 80px;
+  padding-right: 70px;
+  height: 100%;
+  width: 50%;
+  max-width: 457px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+@media screen and (max-width: 768px) {
+  .presentation__packs {
+    display: none;
+  }
+}
+@media (max-height: 400px) and (orientation: landscape) {
+  .presentation__packs {
+    display: none;
+  }
+}
+.presentation__packs-img {
+  max-width: 100%;
+}
+.presentation__info {
+  min-height: 100%;
+  padding-top: 27px;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.presentation__brand-logo {
+  width: 128px;
+  margin: 0 auto;
+}
+.presentation__title {
+  margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .presentation__title {
+    text-align: center;
+  }
+}
+@media (max-height: 400px) and (orientation: landscape) {
+  .presentation__title {
+    text-align: center;
+  }
+}
+.presentation__sup-title {
+  margin-top: 20px;
+  font-size: 25px;
+}
+@media screen and (max-width: 768px) {
+  .presentation__sup-title {
+    text-align: center;
+  }
+}
+@media (max-height: 400px) and (orientation: landscape) {
+  .presentation__sup-title {
+    text-align: center;
+  }
+}
+.presentation__feed {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+@media screen and (max-width: 768px) {
+  .presentation__feed {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 40px;
+  }
+}
+@media (max-height: 400px) and (orientation: landscape) {
+  .presentation__feed {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 40px;
+  }
+}
+.presentation__feed .presentation__packs-img {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .presentation__feed .presentation__packs-img {
+    display: block;
+    max-width: 60vmin;
+    max-height: 100vmin;
+  }
+}
+@media (max-height: 400px) and (orientation: landscape) {
+  .presentation__feed .presentation__packs-img {
+    display: block;
+    max-height: 80vmin;
+  }
+}
+.presentation__plate-img {
+  margin-left: calc(-70px - 14%);
+  width: 30vw;
+  max-width: 300px;
+  max-height: 261px;
+}
+@media screen and (max-width: 768px) {
+  .presentation__plate-img {
+    margin-left: -40px;
+  }
+}
+@media (max-height: 400px) and (orientation: landscape) {
+  .presentation__plate-img {
+    margin-left: -40px;
+    width: auto;
+    max-height: 30vmin;
+  }
+}
+h2 + p {
+  font-family: 'Roboto-Light';
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  color: #000000;
+  width: 1167px;
+  margin: 18px auto 30px;
+}
+h2 + p + div {
+  text-align: center;
+}
+.food {
+  width: 90%;
+}
+.wrapper-section {
+  padding-top: 70px;
+  padding-bottom: 62px;
+}
+.section-benefits {
+  position: relative;
+  display: grid;
+  grid-template-columns: 380px 1fr auto;
+  grid-template-rows: 120px 1fr;
+  overflow: hidden;
+  background: url(../img/feed_pellet.jpg) left 415px no-repeat, url(../img/feed__1.png) 190px 30px no-repeat, url(../img/feed__2.png) 1040px 610px no-repeat;
+  background-size: 320px 360px, 70px 70px, 80px 80px;
+  padding-bottom: 150px;
+}
+.img-feed-adult-cat {
+  position: absolute;
+  top: -150px;
+  right: 0px;
+  width: 35vw;
+}
+/* end */
+.benefits {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  width: 590px;
+}
+.benefits li {
+  font-family: 'Roboto-Light';
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 26px;
+  color: #272727;
+  margin-bottom: 25px;
+}
+.benefits li span {
+  font-size: 25px;
+  line-height: 29px;
+  color: #4CAC47;
+}
+.wrapper-footer {
+  text-align: center;
+}
+.wrapper-footer__header {
+  margin-bottom: 23px;
+}
+.see-more {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #80D057;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 10px 90px;
+}
+.see-more:hover {
+  background-color: #629548;
+}
+.footer-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+}
+.footer-images img {
+  justify-self: center;
+}
+.footer-images img + img {
+  margin-top: auto;
+}
+/* --------------------------------------------------------------------------------
+
+                                    Media queries
+
+--------------------------------------------------------------------------------- */
+@media screen and (min-width: 1600px) {
+  .plate-feed__img {
+    width: 336px;
+  }
+  .food {
+    width: inherit;
+  }
+  .section-benefits {
+    background: url(../img/feed_pellet.jpg) left 400px no-repeat, url(../img/feed__1.png) 190px 30px no-repeat, url(../img/feed__2.png) 1040px 660px no-repeat;
+    background-size: 320px 360px, 70px 70px, 80px 80px;
+  }
+  .img-feed-adult-cat {
+    width: 590px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .section-benefits {
+    grid-template-columns: 280px 1fr auto;
+    height: inherit;
+    background: url(../img/feed_pellet.jpg) left 400px no-repeat, url(../img/feed__1.png) 190px 30px no-repeat, url(../img/feed__2.png) 1040px 660px no-repeat;
+    background-size: 320px 360px, 70px 70px, 80px 80px;
+  }
+}
+@media screen and (max-width: 1340px) {
+  .main-section__information-block {
+    text-align: center;
+    margin-left: 0px;
+  }
+  .farmina__logo {
+    margin-right: 0px;
+  }
+  .wrapper-section {
+    padding: 50px 5px 0px 5px;
+  }
+  .img-feed-adult-cat {
+    top: -80px;
+  }
+  .section-benefits {
+    background: url(../img/feed_pellet.jpg) left 360px no-repeat, url(../img/feed__1.png) 190px 30px no-repeat, url(../img/feed__2.png) 1040px 600px no-repeat;
+    background-size: 320px 360px, 70px 70px, 80px 80px;
+  }
+  .benefits {
+    width: 400px;
+    margin-right: 90px;
+  }
+  .benefits li {
+    font-size: 16px;
+    line-height: inherit;
+    margin-bottom: 15px;
+  }
+  .benefits li span {
+    font-size: 20px;
+    line-height: inherit;
+  }
+  .block-pack-feed__img {
+    width: 35vw;
+  }
+  .farmina__img {
+    width: 10vw;
+  }
+  .plate-feed__img {
+    width: 25vw;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h2 + p {
+    text-align: center;
+    width: inherit;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .navigation li {
+    margin: 0px 5px;
+  }
+  .navigation li a {
+    font-size: 14px;
+  }
+  .block-pack-feed__img {
+    width: 350px;
+  }
+  .plate-feed {
+    bottom: -130px;
+  }
+  .plate-feed__img {
+    margin-top: 0px;
+    width: 280px;
+  }
+  .main-section__information-block {
+    width: 340px;
+  }
+  .main-section__wrapper {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h2 + p {
+    font-size: 16px;
+  }
+  .food {
+    width: 100%;
+  }
+  .section-benefits {
+    grid-template-columns: 200px 1fr auto;
+    grid-template-rows: 10px 1fr;
+    background: url(../img/feed_pellet.jpg) left 440px no-repeat, url(../img/feed__1.png) 190px 30px no-repeat, url(../img/feed__2.png) 750px 610px no-repeat;
+    background-size: 260px 280px, 70px 70px, 80px 80px;
+  }
+  .benefits {
+    width: 360px;
+    padding: 100px 5px;
+  }
+  .benefits li {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .benefits li span {
+    font-size: 18px;
+  }
+  .see-more {
+    font-size: 3vw;
+  }
+  .dog {
+    margin-top: auto;
+    width: 45vw;
+  }
+  .cat {
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 968px) {
+  .section-benefits {
+    grid-template-columns: 80px 1fr auto;
+    overflow: hidden;
+    background: url(../img/feed_pellet.jpg) left 430px no-repeat, url(../img/feed__1.png) 150px 30px no-repeat, url(../img/feed__2.png) 650px 400px no-repeat;
+    background-size: 120px 140px, 40px 40px, 40px 40px;
+    padding-bottom: 0px;
+  }
+  .benefits {
+    width: 390px;
+    padding: 100px 5px;
+  }
+  .see-more {
+    font-size: 3.5vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    height: 58px;
+  }
+  .logo__zoocomplex {
+    width: 130px;
+  }
+  nav {
+    display: none;
+  }
+  .wrapper-basket {
+    width: 47px;
+  }
+  .basket {
+    background-size: 30px;
+  }
+  .counter {
+    bottom: 5px;
+    right: 0px;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+  }
+  .plate-feed {
+    bottom: -100px;
+  }
+  .plate-feed__img {
+    width: 35vw;
+  }
+  .main-section {
+    text-align: center;
+    background: url(../img/background_first_section.jpg) center -478px no-repeat;
+  }
+  .main-section__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+  }
+  .main-section__information-block {
+    margin-top: 15px;
+    margin-left: 0px;
+    width: inherit;
+  }
+  .farmina__logo {
+    margin-right: 0px;
+    width: 22vw;
+  }
+  h2 {
+    font-size: 5vw;
+  }
+  h2 + p {
+    font-size: 2.5vw;
+    line-height: normal;
+  }
+  .block-pack-feed__img {
+    width: 45vw;
+  }
+  .section-benefits {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    background: url(../img/feed__1.png) 180px 310px no-repeat;
+    background-size: 40px 40px;
+    padding-bottom: 40px;
+  }
+  .img-feed-adult-cat {
+    position: inherit;
+    width: 60vw;
+    margin-top: -85px;
+  }
+  .benefits {
+    width: 80vw;
+    grid-column-start: 2;
+    margin-right: 0px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  .benefits li {
+    margin-bottom: 10px;
+    font-size: 2.5vw;
+    line-height: normal;
+  }
+  .benefits li span {
+    font-size: 3.2vw;
+    line-height: 40px;
+  }
+  .benefits + div {
+    text-align: right;
+  }
+}
+@media screen and (max-width: 576px) {
+  .wrapper-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  h2 {
+    font-size: 7vw;
+  }
+  h2 + p {
+    font-size: 4vw;
+  }
+  .block-pack-feed__img {
+    width: 55vw;
+  }
+  .plate-feed__img {
+    width: 45vw;
+  }
+  .farmina__logo {
+    width: 35vw;
+  }
+  .plate-feed__img {
+    width: 60vw;
+  }
+  .section-benefits {
+    background: url(../img/feed__1.png) 80px 100px no-repeat;
+    background-size: 40px 40px;
+  }
+  .benefits li {
+    font-size: 3vw;
+  }
+  .benefits li span {
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+  footer {
+    padding-top: 40px;
+  }
+  .wrapper-footer__header {
+    margin-bottom: 15px;
+  }
+  .see-more {
+    font-size: 3.5vw;
+  }
+}
